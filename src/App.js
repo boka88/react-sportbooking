@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import {Button} from '@mui/material'
+import Navbar from './components/Navbar/Navbar'
+
+// https://www.youtube.com/watch?v=BTgBcsSZxFU&list=PLakAmVjYWIY6g-Bx2vVnHFuaa8oaPorSI&index=2&ab_channel=iNovotek 4 Deo 1:00
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 }
 
