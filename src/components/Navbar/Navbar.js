@@ -10,7 +10,7 @@ import {
     MenuItem
 } from '@mui/material'
 
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+// import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 
@@ -20,11 +20,9 @@ const Navbar = () => {
     const [anchorEl, setAnchorEl] = useState(null)
 
     const openMenu = Boolean(anchorEl)
-    console.log(openMenu)
 
     const handleClick = (e) => {
         setAnchorEl(e.currentTarget)
-        console.log(e.currentTarget)
     }
 
     const handleClose = () => {
@@ -33,21 +31,22 @@ const Navbar = () => {
 
 
     return (
-        <AppBar elevation={0} sx={{ backgroundColor: 'white' }}>
+        <Box elevation={0} sx={{ backgroundColor: 'white' }}>
             <Toolbar>
                 <Box
                     sx={{
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        width: '100%'
+                        width: '100%',
+                        padding: '10px 0px'
                     }}
                     component='div'
                 >
                     {/* Logo */}
                     <Box>
                         <IconButton>
-                            <LocalMallIcon />
+                            <LocalMallIcon sx={{fontSize: '2.4rem'}} />
                         </IconButton>
                     </Box>
 
@@ -98,7 +97,7 @@ const Navbar = () => {
 
                 </Box>
             </Toolbar>
-        </AppBar>
+        </Box>
     )
 }
 
