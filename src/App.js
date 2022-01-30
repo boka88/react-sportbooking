@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import GridMUI from './playground/GridMUI';
 import ProductContainer from './components/Products/ProductContainer';
 
-// https://www.youtube.com/watch?v=BTgBcsSZxFU&list=PLakAmVjYWIY6g-Bx2vVnHFuaa8oaPorSI&index=2&ab_channel=iNovotek 6 Deo Pocetak
+// https://www.youtube.com/watch?v=BTgBcsSZxFU&list=PLakAmVjYWIY6g-Bx2vVnHFuaa8oaPorSI&index=2&ab_channel=iNovotek 7 Deo Pocetak
 
 function App() {
 
